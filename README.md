@@ -2,7 +2,7 @@
 
 Hi, I'm Panhapich Khe 👋
 
-This repository contains my cybersecurity learning journey, including notes, hands-on labs, and write-ups from platforms like TryHackMe.
+This repository contains my cybersecurity learning journey, including notes, hands-on labs, and write-ups from platforms like TryHackMe, HackTheBox, and PortSwigger.
 
 ---
 
