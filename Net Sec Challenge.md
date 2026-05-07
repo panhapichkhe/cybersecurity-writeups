@@ -16,7 +16,7 @@ Answer the following questions using:
 
 ### 🔹 What is the highest port number being open less than 10,000?
 
-Performed a TCP scan:
+Performed a scan:
 
 ```bash
 nmap -p- --min-rate 1000 <TARGET_IP>
