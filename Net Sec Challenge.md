@@ -19,7 +19,7 @@ Answer the following questions using:
 Performed a scan:
 
 ```bash
-nmap -p- --min-rate 1000 <TARGET_IP>
+nmap -p- --min-rate 1000 10.149.160.48
 ```
 
 <img width="1286" height="340" alt="image" src="https://github.com/user-attachments/assets/8e762efc-dd04-4321-9ac5-1d59d1bf04e7" />
