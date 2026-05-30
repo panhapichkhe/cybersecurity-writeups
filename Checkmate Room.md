@@ -215,8 +215,6 @@ The visible company keywords on the post were:
 - `innovation`
 - `digital`
 - `cloud`
-- `future`
-- `talent`
 
 Based on this pattern, a small targeted wordlist was created using the keywords with the year 2024 and an exclamation mark. 
 
@@ -227,8 +225,6 @@ Excellence2024!
 Innovation2024!
 Digital2024!
 Cloud2024!
-Talent2024!
-Future2024!
 EOF
 ```
 
