@@ -6,7 +6,7 @@
 
 This room focuses on password security weaknesses caused by predictable password patterns, password reuse, and poor operational security practices.
 
-Marco Bianchi, a systems administrator, deployed multiple internal services including:
+Marco Bianchi, a system administrator, deployed multiple internal services including:
 
 - Firewall Console
 - Employee Portal
