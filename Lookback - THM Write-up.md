@@ -10,7 +10,7 @@ Sometimes to move forward, we have to go backward. So if you get stuck, try to l
 
 <img width="1345" height="603" alt="image" src="https://github.com/user-attachments/assets/f018aab9-d6e8-46ff-8af9-2a84663818c2" />
 
-Important clues from your scan:
+Important clues from the scan:
 ```
 80    HTTP      Microsoft IIS 10.0
 443   HTTPS     Outlook / OWA
