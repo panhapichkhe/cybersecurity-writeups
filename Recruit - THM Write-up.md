@@ -130,8 +130,8 @@ Then login as Admin and grab final flag😈.
 
 ## Key Takeaway
 
-Small information leaks can chain together.
-Mail logs exposed the location of sensitive credentials.
-LFI led to HR access.
-HR access exposed SQLi.
-SQLi led directly to admin compromise.
+- Small information leaks can chain together.
+- Mail logs exposed the location of sensitive credentials.
+- LFI led to HR access.
+- HR access exposed SQLi.
+- SQLi led directly to admin compromise.
