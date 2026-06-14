@@ -19,6 +19,10 @@ I checked the port 80:
 
 ## 2. Web Enumeration
 
+```
+feroxbuster -u 'http://10.49.151.224' -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-lowercase-2.3-medium.txt
+```
+
 <img width="1341" height="802" alt="image" src="https://github.com/user-attachments/assets/398ce243-7602-4868-b4e2-4bbae1ab309c" />
 
 - Feroxbuster discovered:
