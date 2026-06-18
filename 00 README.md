@@ -1,46 +1,77 @@
-# Cybersecurity Write-ups
+<div align="center">
 
-Hi, I'm Panhapich Khe 👋
+# 🛡️ Cybersecurity Writeups & Labs
 
-This repository contains my cybersecurity learning journey, including notes, hands-on labs, and write-ups from platforms like TryHackMe, HackTheBox, and PortSwigger.
+### Hands-on cybersecurity notes, TryHackMe writeups, web security practice, and penetration testing methodology.
 
----
+![GitHub repo size](https://img.shields.io/github/repo-size/panhapichkhe/cybersecurity-writeups)
+![GitHub last commit](https://img.shields.io/github/last-commit/panhapichkhe/cybersecurity-writeups)
+![GitHub stars](https://img.shields.io/github/stars/panhapichkhe/cybersecurity-writeups?style=social)
 
-## 📚 Topics Covered
-
-- Web Application Security
-- Network Enumeration
-- Linux Privilege Escalation
-- Burp Suite
-- Nmap
-- XSS
-- SSRF
-- SQL Injection
-- OAuth
-- File Inclusion
-- Prototype Pollution
-- Memory Forensics
+</div>
 
 ---
 
-## 🛠️ Tools
+## 👋 About This Repository
 
-- Burp Suite
-- Nmap
-- Hydra
-- Gobuster
-- ffuf
-- Volatility3
-- Kali Linux
+This repository documents my hands-on cybersecurity learning journey through practical labs, TryHackMe rooms, PortSwigger Web Security Academy practice, and penetration testing methodology.
+
+My current focus areas include:
+
+* Web application security
+* Reconnaissance and enumeration
+* Linux privilege escalation
+* Active Directory basics
+* Vulnerability analysis
+* Security reporting and writeups
+
+---
+
+## ⭐ Featured Writeups
+
+| Room / Topic                                                 | Platform  | Key Areas                                                          |
+| ------------------------------------------------------------ | --------- | ------------------------------------------------------------------ |
+| [Dead Drop](./Dead%20Drop%20-%20THM%20Write-up.md)           | TryHackMe | Web exploitation, APK analysis, pivoting, Active Directory         |
+| [Lookback](./Lookback%20-%20THM%20Write-up.md)               | TryHackMe | Web enumeration, RCE, Windows privilege escalation                 |
+| [Recruit](./Recruit%20-%20THM%20Write-up.md)                 | TryHackMe | LFI, XSS, web exploitation                                         |
+| [Wonderland](./Wonderland%20-%20THM%20Writeup.md)            | TryHackMe | Linux enumeration, privilege escalation                            |
+| [Operation Promotion](./Operation%20Promotion%20Write-up.md) | TryHackMe | Web exploitation, credential discovery, Linux privilege escalation |
+
+---
+
+## 🧰 Tools & Skills Practiced
+
+| Category       | Tools / Topics                                              |
+| -------------- | ----------------------------------------------------------- |
+| Reconnaissance | Nmap, Gobuster, ffuf, Nikto                                 |
+| Web Security   | Burp Suite, SQLi, XSS, LFI, SSTI, access control            |
+| Linux          | Enumeration, permissions, cron jobs, privilege escalation   |
+| Windows / AD   | BloodHound, basic AD enumeration, lateral movement concepts |
+| Reporting      | Markdown writeups, attack chain summaries, lessons learned  |
+
+---
+
+## 📚 Learning Platforms
+
+* TryHackMe
+* PortSwigger Web Security Academy
+* Hack The Box Academy
+* Personal lab notes and practice
 
 ---
 
 ## 🎯 Goal
 
-Build practical cybersecurity skills through hands-on learning and lab environments.
+I am building practical cybersecurity skills toward junior cybersecurity analyst, SOC analyst, and penetration testing roles.
+
+This repository helps me document my methodology, improve technical writing, and track my hands-on progress.
 
 ---
 
-## 🚧 Current Status
+## 🔗 Links
 
-Currently learning, practicing, and building write-ups step by step.
+* LinkedIn: `add your LinkedIn link here`
+* TryHackMe: `add your TryHackMe link here`
+* Medium: `add your Medium link here`
+
+</div>
