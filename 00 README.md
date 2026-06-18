@@ -70,8 +70,8 @@ This repository helps me document my methodology, improve technical writing, and
 
 ## 🔗 Links
 
-* LinkedIn: `add your LinkedIn link here`
-* TryHackMe: `add your TryHackMe link here`
-* Medium: `add your Medium link here`
+* LinkedIn: https://www.linkedin.com/in/panhapich-khe-11a814271/
+* TryHackMe: https://tryhackme.com/p/shortIntern
+* Medium: https://medium.com/@khepanhapich
 
 </div>
