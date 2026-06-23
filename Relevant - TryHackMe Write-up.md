@@ -27,7 +27,7 @@ nmap -p- --min-rate 5000 -T4 relevant.thm -oN allports.txt
 <img width="1340" height="384" alt="image" src="https://github.com/user-attachments/assets/b3393f9f-0c6f-43a6-8c67-8e2300a4e6fc" />
 
 ```cmd id="dvo4ek"
-nmap -sC -sV -p <ports> relevant.thm -oN detail.txt
+nmap -sC -sV -p 80,135,1139,445,3389,49663,49666,49667 relevant.thm -oN detail.txt
 ```
 
 <img width="1339" height="505" alt="image" src="https://github.com/user-attachments/assets/8c6172a5-94ce-473a-90a1-fb69da278a63" /> 
