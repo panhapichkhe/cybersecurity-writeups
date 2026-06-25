@@ -248,8 +248,6 @@ The Script Console can be accessed from:
 
 <img width="1901" height="859" alt="image" src="https://github.com/user-attachments/assets/e568fbca-791a-43af-949a-6e02e501a7f9" />
 
-or directly:
-
 Before running the payload, I started a listener on my Kali machine. I used Penelope because it provides a cleaner interactive shell.
 
 ```bash
