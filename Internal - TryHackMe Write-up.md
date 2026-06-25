@@ -82,11 +82,7 @@ wpscan --url http://internal.thm/blog/ \
 
 <img width="1358" height="391" alt="image" src="https://github.com/user-attachments/assets/a5e152bf-cbbc-4c40-97a7-3be239007a35" />
 
-With the password I got for `admin`, I was able to log in to the WordPress admin dashboard at:
-
-```text
-http://internal.thm/blog/wp-login.php
-```
+With the password I got for `admin`, I was able to log in to the WordPress admin dashboard.
 
 This gave access to the WordPress backend, which became the next step toward getting command execution on the target.
 
