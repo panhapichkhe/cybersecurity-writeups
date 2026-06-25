@@ -1,4 +1,4 @@
-<img width="1885" height="417" alt="image" src="https://github.com/user-attachments/assets/5b0eb57a-5d0c-4295-b9d1-1569fe65c9d0" /># TryHackMe: Internal Write-up
+# TryHackMe: Internal Write-up
 
 <img width="1885" height="417" alt="image" src="https://github.com/user-attachments/assets/6e838b77-aec7-49aa-b6e7-43e90464faee" />
 
@@ -14,10 +14,6 @@ To make it more convenient, I added it the target ip to `/etc/hosts` and put the
 
 ```bash
 sudo nano /etc/hosts
-```
-
-```text
-<TARGET_IP> internal.thm
 ```
 
 ## Reconnaissance
@@ -42,8 +38,20 @@ I opened the site:
 http://internal.thm
 ```
 
-The website was running WordPress.
+Opening `http://internal.thm` initially displayed the default Apache2 Ubuntu page. This confirmed that the HTTP service was running, but the default page did not contain anything useful by itself. Because of that, I continued with directory enumeration to look for hidden web content.
 
+```
+gobuster dir -u http://internal.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
+<img width="1132" height="134" alt="image" src="https://github.com/user-attachments/assets/bd413874-40df-4165-a1b8-9e7712c9c605" />
+
+Gobuster found 2 interesting paths. The most interesting result was `/blog`, which redirected to:
+```
+http://internal.thm/blog/
+```
+<img width="1381" height="855" alt="image" src="https://github.com/user-attachments/assets/715c565a-24ea-4200-be39-a2c25cc6a72e" />
+
+Opening this path revealed a WordPress site, so I shifted my enumeration toward WordPress-specific files, users, themes, and login pages.
 ---
 
 ## WordPress Enumeration
