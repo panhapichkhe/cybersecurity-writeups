@@ -166,9 +166,9 @@ cat /var/www/html/blog/wp-config.php
 The `wp-config.php` file contained MySQL credentials, which confirmed that WordPress was connected to a local database. I also checked common directories for interesting files.
 
 Using these credentials, I logged into MySQL and inspected the WordPress database.
-
+```
 mysql -u <DB_USER> -p <DB_PASS>
-
+```
 Inside MySQL, I listed the databases and selected the WordPress database.
 
 <img width="1348" height="756" alt="image" src="https://github.com/user-attachments/assets/e7ca19af-1d51-4ed1-a547-c906c1d2b7d9" />
